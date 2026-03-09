@@ -1,0 +1,100 @@
+.div-pai{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c316b;
+}
+
+.foto-perfil{
+    width: 470px;
+    height: 450px;
+    margin:55px 100px;
+    border-radius: 50%;
+    box-shadow: 0 11px 30px rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05); /* aumenta levemente */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* sombra mais intensa ao passar o mouse */
+}
+
+.section-apresentacao{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.h1-apresentacao{
+  font-size: 80px;
+  margin: 55px 70px;
+
+  background: linear-gradient(
+    120deg,
+    #1e3a8a,
+    #3b82f6,
+    #60a5fa,
+    #3b82f6,
+    #1e3a8a
+  );
+
+  background-size: 300% 300%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 6s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+
+
+p{
+    font-size: 25px;
+    line-height: 1.5;
+    width: 600px;
+    margin-left: 30px;
+    color: white;
+}
+
+.botao-saiba-mais{
+    display: inline-block; /* IMPORTANTE PARA LINK VIRAR "BOTÃO" */
+
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none; /* REMOVE SUBLINHADO DO LINK */
+
+    background: linear-gradient(135deg, #0a094b, #2a1d74);
+
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0px 0px 33px 14px rgba(60, 42, 163, 0.5);
+}
+
+.botao-saiba-mais:hover{
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow: 0 10px 25px rgba(60, 42, 163, 0.4);
+
+    background: linear-gradient(135deg, #110f5f, #2a1d74);
+}
+
+.botao-saiba-mais:active{
+    transform: translateY(0px) scale(0.95);
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}

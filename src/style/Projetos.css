@@ -1,0 +1,72 @@
+.section-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #162a61;
+}
+
+
+.card-projetos{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background-color: #000;
+}
+
+.h3-projetos{
+    color: white;
+    margin: 0px 0 33px 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.h2-projetos{
+    font-size: 80px;
+    margin: 55px 70px;
+    background: linear-gradient(120deg, #1e3a8a, #3b82f6, #60a5fa, #3b82f6, #1e3a8a);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease-in-out infinite;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.button-projetos {
+    width: 150px; /* largura que você quiser */
+    margin: 20px auto 0 auto; /* centraliza horizontalmente */
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3c2aa3, #4f46e5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 33px 14px rgba(60, 42, 163, 0.2);
+}
+
+
+.button-projetos:hover{
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow: 0 10px 25px rgba(60, 42, 163, 0.4);
+
+}
+
+.button-projetos:active{
+    transform: translateY(0px) scale(0.95);
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}

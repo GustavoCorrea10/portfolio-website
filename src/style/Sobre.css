@@ -1,0 +1,20 @@
+.div-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-sobre{
+    font-size: 80px;
+    margin: 55px 70px;
+    background: linear-gradient(120deg, #1e3a8a, #3b82f6, #60a5fa, #3b82f6, #1e3a8a);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease-in-out infinite;
+}
+
+.p-sobre{
+    text-align: center;
+    width: 900px;
+}
