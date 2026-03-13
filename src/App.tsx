@@ -1,5 +1,4 @@
 import Apresentacao from "./components/Apresentacao"
-import Contato from "./components/Contato"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Projetos from "./components/Projetos"
@@ -13,7 +12,6 @@ function App(){
     <Apresentacao />
     <Sobre />
     <Projetos />
-    <Contato />
     <Footer />
     </>
   )

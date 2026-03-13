@@ -7,7 +7,7 @@ function Apresentacao() {
     <div className="div-pai">
       <section className="section-apresentacao">
         <h1 className="h1-apresentacao">Full Stack<br /> Developer</h1>
-        <p>
+        <p className="p_apresentacao">
           Desenvolvedor focado em criar aplicações web modernas usando Java, React e TypeScript.
 
         </p>
