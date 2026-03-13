@@ -113,22 +113,18 @@ img {
     /* centraliza horizontalmente */
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #fff;
-    color: #000;
+    color: #f8f8f8;
     cursor: pointer;
-    background: linear-gradient(135deg, #3c2aa3, #4f46e5);
+    background: linear-gradient(135deg, #312f50, #2c2a5f);
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0px 0px 33px 14px rgba(60, 42, 163, 0.2);
 }
 
 
 .button-projetos:hover {
     transform: translateY(-4px) scale(1.03);
-
-    box-shadow: 0 10px 25px rgba(60, 42, 163, 0.4);
-
 }
 
 .button-projetos:active {
