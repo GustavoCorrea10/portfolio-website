@@ -1,6 +1,8 @@
 .div-pai{
     display: flex;
     justify-content: space-between;
+    background-color: #1c316b;
+
 }
 
 .foto-perfil{
