@@ -3,7 +3,7 @@ import "../style/Tecnologias.css"
 
 function Tecnologias() {
     return (
-        <section className="section_tecnologias">
+        <section id="tecnologias" className="section_tecnologias">
             <h1 className="h1_tecnologias">Habilidades Tecnicas</h1>
             <div className="div_tecnologias">
 

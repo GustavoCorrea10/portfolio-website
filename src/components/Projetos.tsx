@@ -5,7 +5,7 @@ import Estetica from "../assets/img/projetos/imagem_estetica.png"
 
 function Projetos() {
   return (
-    <section className="section-projetos">
+    <section id="projetos" className="section-projetos">
       <h2 className="h2-projetos">Projetos</h2>
 
       <div className="cards">

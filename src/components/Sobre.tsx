@@ -2,7 +2,7 @@ import "../style/Sobre.css"
 
 function Sobre() {
     return (
-        <div className="div-sobre">
+        <div  id="sobre" className="div-sobre">
             <h1 className="h1-sobre">Sobre mim</h1>
             <p className="p-sobre">Cursando Análise e Desenvolvimento de Sistemas e formado em Desenvolvimento Full Stack Java pelo bootcamp da Generation Brasil, com experiência prática no desenvolvimento de aplicações web e trabalho em equipe por meio de projetos realizados durante a formação.
 

@@ -8,7 +8,7 @@
 .foto-perfil{
     width: 470px;
     height: 530px;
-    margin: 5px 100px;
+    margin: 80px 100px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -18,13 +18,14 @@
 
 .section-apresentacao{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 100px;
+      scroll-margin-top: 100px;
+
 }
 
 .h1-apresentacao{
   font-size: 80px;
   margin: 45px 70px;
-
   background: linear-gradient(
     120deg,
     #1e3a8a,

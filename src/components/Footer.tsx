@@ -2,7 +2,7 @@ import "../style/Footer.css"
 
 function Rodape() {
   return (
-    <footer>
+    <footer id="contato">
       <div className="div_sobre">
         <p className="p_Copyright">Gustavo Corrêa | Copyright: 2026</p>
         <p className="p_footer">Acesse as minhas redes sociais</p>

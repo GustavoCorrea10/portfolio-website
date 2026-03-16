@@ -69,7 +69,9 @@
 
 .h2-projetos {
     font-size: 80px;
-    margin: 55px 70px;
+    margin-top: 95px;
+    margin-left: 70px;
+    margin-right: 70px;
     background: linear-gradient(120deg, #1e3a8a, #3b82f6, #60a5fa, #3b82f6, #1e3a8a);
     background-size: 300% 300%;
     -webkit-background-clip: text;

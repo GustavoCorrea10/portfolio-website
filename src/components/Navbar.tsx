@@ -9,8 +9,9 @@ function Navbar() {
 
             <nav>
                 <ul className="menu">
-                    <li><a href="#apresentacao">Apresentação</a></li>
-                    <li><a href="#apresentacao">Tecnologias</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre">Apresentação</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>

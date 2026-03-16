@@ -4,7 +4,7 @@ import fotoPerfil from "../assets/img/perfil/fotoPerfil.png"
 function Apresentacao() {
   return (
 
-    <div className="div-pai">
+    <div id="inicio" className="div-pai">
       <section className="section-apresentacao">
         <h1 className="h1-apresentacao">Full Stack<br /> Developer</h1>
         <p className="p_apresentacao">

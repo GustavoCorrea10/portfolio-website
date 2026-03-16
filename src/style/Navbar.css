@@ -29,9 +29,10 @@
     text-decoration: none;
     color: white;
     font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
 }
 
 .menu a:hover{
-    color: #3b82f6;
-
+    transform: scale(1.1);
 }
