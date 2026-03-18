@@ -2,27 +2,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-margin-top: 100px;
+    flex-wrap: wrap;
 
 }
 
 .cards {
     display: flex;
-    gap: 20px;
+    gap: 17px;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* quebra linha quando precisar */
     background-color: rgb(24, 24, 27);
     border-radius: 15px;
-    margin-bottom: 29px;
-    width: 60%;
+    max-width: 95%;
 }
 
 .card-projetos {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     border-radius: 15px;
     padding: 20px;
     margin-top: 20px;
-    width: 300px;
+    width: 250px;
+    min-height: 200px;
     background-color: rgb(64, 71, 94);
 }
 
@@ -30,7 +33,9 @@
     width: 100%; /* OCUPA TODA A LARGURA DO FLEX */
     display: flex;
     justify-content: center; /* CENTRALIZA O BOTÃO */
-    margin: 20px 0 30px 0;
+    margin:8px auto;
+    position: relative;
+    top: -10px;
 }
 
 .button-ver-mais{
@@ -46,6 +51,7 @@
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    margin-top: 0px;
 }
 
 .icon-github{
@@ -62,16 +68,17 @@
 .h3-projetos {
     color: white;
     margin: 0px 0 33px 0;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
 }
 
 
 .h2-projetos {
-    font-size: 80px;
-    margin-top: 95px;
+    font-size: 70px;
+    margin-top: 10px;
     margin-left: 70px;
     margin-right: 70px;
+    margin-bottom: 0;
     background: linear-gradient(120deg, #1e3a8a, #3b82f6, #60a5fa, #3b82f6, #1e3a8a);
     background-size: 300% 300%;
     -webkit-background-clip: text;
@@ -80,9 +87,10 @@
     color: white;
 }
 
-img {
-    width: 100%;
-    height: 130px;
+.img_projetos {
+    margin:0 auto ;
+    width: 95%;
+    height: 110px;
     border-radius: 5px;
 }
 
@@ -115,6 +123,8 @@ img {
     background-color: rgb(0, 0, 0);
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
 }
 
 

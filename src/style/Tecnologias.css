@@ -1,13 +1,15 @@
 .section_tecnologias{
     background-color: #1c316b;
-    padding: 60px 0px;
+    padding-bottom:37px;
+    scroll-margin-top: 100px;
+
 }
 
 .h1_tecnologias{
     color: white;
     text-align: center;
-    font-size: 80px;
-    margin-top: 50px;
+    font-size: 70px;
+    margin: 0px;
     background: linear-gradient(120deg, #1e3a8a, #3b82f6, #60a5fa, #3b82f6, #1e3a8a);
     background-size: 300% 300%;
     -webkit-background-clip: text;
@@ -23,7 +25,7 @@ flex-wrap: wrap;
 background-color: rgb(24, 24, 27);
 height: 300px;
 border-radius: 20px;
-margin: 0px auto;
+margin: 30px auto;
 padding-top: 10px;
 width: 900px;
 }
@@ -33,7 +35,8 @@ width: 900px;
     width: 100%;
     text-align: center;
     padding: 0px 0px;
-    margin: 0px ;
+    margin: 2px ;
+    font-size: 20px;
 }
 
 .div_card_tecnologia{

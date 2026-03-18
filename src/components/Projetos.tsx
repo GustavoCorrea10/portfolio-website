@@ -12,7 +12,7 @@ function Projetos() {
 
   <div className="card-projetos">
     <h3 className="h3-projetos">Prato Certo</h3>
-    <img src={PratoCerto}></img>
+    <img  className="img_projetos" src={PratoCerto}></img>
     <div className="div_icons">
       <img className="img_icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
       <img className="img_icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
@@ -22,20 +22,21 @@ function Projetos() {
       <img className="img_icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
       <img className="img_icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
     </div>
-    <button className="button-projetos">Ver Projeto</button>
+    <a href="https://unique-kringle-2cc4cd.netlify.app/" className="button-projetos">Ver Projeto</a>
   </div>
 
   <div className="card-projetos">
     <h3 className="h3-projetos">Estetica</h3>
-    <img src={Estetica}></img>
+    <img className="img_projetos" src={Estetica}></img>
     <div className="div_icons">
       <img className="img_icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
       <img className="img_icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
     </div>
-    <button className="button-projetos">Ver Projeto</button>
+    <a href="https://gustavocorrea10.github.io/estetica_front/" className="button-projetos">Ver Projeto</a>
   </div>
 
-  {/* NOVO BOTÃO ABAIXO DOS CARDS */}
+  
+
   <div className="container-botao-geral">
     <a href="https://github.com/GustavoCorrea10" className="button-ver-mais"><img 
       className="icon-github"

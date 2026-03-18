@@ -2,14 +2,15 @@
     display: flex;
     justify-content: space-between;
     background-color: #1c316b;
-
+    scroll-margin-top: 100px;
 }
 
 .foto-perfil{
     width: 470px;
     height: 530px;
-    margin: 80px 100px;
+    margin: 5px 100px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    z-index: 1;
 }
 
 .foto-perfil:hover {
@@ -19,13 +20,11 @@
 .section-apresentacao{
     text-align: center;
     margin-top: 100px;
-      scroll-margin-top: 100px;
-
 }
 
 .h1-apresentacao{
-  font-size: 80px;
-  margin: 45px 70px;
+  font-size: 70px;
+  margin: 5px 70px;
   background: linear-gradient(
     120deg,
     #1e3a8a,
@@ -58,7 +57,7 @@
 
 
 .p_apresentacao{
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.5;
     width: 600px;
     margin-left: 30px;
@@ -66,34 +65,26 @@
 }
 
 .botao-saiba-mais{
-    display: inline-block; /* IMPORTANTE PARA LINK VIRAR "BOTÃO" */
-
+    display: inline-block; 
     margin-top: 20px;
     padding: 12px 24px;
     font-size: 18px;
     color: white;
-    text-decoration: none; /* REMOVE SUBLINHADO DO LINK */
-
+    text-decoration: none; 
     background: linear-gradient(135deg, #0a094b, #2a1d74);
-
     border-radius: 20px;
     cursor: pointer;
-
     transition: all 0.3s ease;
-
     box-shadow: 0px 0px 33px 14px rgba(60, 42, 163, 0.5);
 }
 
 .botao-saiba-mais:hover{
     transform: translateY(-4px) scale(1.03);
-
     box-shadow: 0 10px 25px rgba(60, 42, 163, 0.4);
-
     background: linear-gradient(135deg, #110f5f, #2a1d74);
 }
 
 .botao-saiba-mais:active{
     transform: translateY(0px) scale(0.95);
-
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
