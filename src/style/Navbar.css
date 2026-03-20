@@ -1,3 +1,4 @@
+/* ===== NAVBAR BASE ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -17,6 +18,7 @@
   font-weight: bold;
 }
 
+/* MENU DESKTOP */
 .menu {
   display: flex;
   gap: 30px;
@@ -29,36 +31,87 @@
   text-decoration: none;
   color: white;
   font-size: 18px;
-  transition:
-    transform 0.3s ease,
-    color 0.3s ease;
-  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .menu a:hover {
   transform: scale(1.1);
 }
 
-@media (max-width: 750px) {
+/* ÍCONE */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
+    justify-content: center;
   }
 
-  .menu {
-    flex-direction: row;
-    gap: 15px;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .menu a {
-    font-size: 16px;
-  }
-
+  /* esconde logo */
   .logo {
     display: none;
+  }
+
+  /* ícone */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 1100;
+    font-size: 28px;
+    color: white;
+  }
+
+  /* container do menu */
+  .nav {
+    position: absolute;
+    top: 70px; /* altura da navbar */
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+
+  /* quando abrir */
+  .nav.active {
+    opacity: 1;
+    pointer-events: all;
+
+    /* fundo com blur */
+    background: rgba(14, 21, 37, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* lista */
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* cada item */
+  .menu li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  /* links */
+  .menu a {
+    display: block;
+    padding: 18px 0;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  /* efeito ao tocar */
+  .menu a:hover {
+    background: rgba(255, 255, 255, 0.08);
   }
 }

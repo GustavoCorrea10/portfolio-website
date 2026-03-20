@@ -73,12 +73,6 @@
     padding: 20px 10px;
   }
 
-  .div_tecnologias {
-    width: 100%;
-    padding: 15px;
-    border-radius: 15px;
-  }
-
   .div_card_tecnologia {
     background-color: rgb(85, 94, 121);
     height: 100px;
@@ -97,7 +91,7 @@
     margin: 30px auto;
     padding-top: 10px;
     width: 100%;
-    max-width: 400px;
+    max-width: 263px;
     min-height: 300px;
   }
 
