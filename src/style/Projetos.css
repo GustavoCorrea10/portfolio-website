@@ -10,7 +10,7 @@
   display: flex;
   gap: 17px;
   justify-content: center;
-  flex-wrap: wrap; /* quebra linha quando precisar */
+  flex-wrap: wrap;
   background-color: rgb(24, 24, 27);
   border-radius: 15px;
   max-width: 95%;
@@ -29,9 +29,9 @@
 }
 
 .container-botao-geral {
-  width: 100%; /* OCUPA TODA A LARGURA DO FLEX */
+  width: 100%;
   display: flex;
-  justify-content: center; /* CENTRALIZA O BOTÃO */
+  justify-content: center;
   margin: 8px auto;
   position: relative;
   top: -10px;
@@ -153,7 +153,7 @@
   }
 
   .h2-projetos {
-    font-size: 8vw; /* cresce/diminui com a tela */
+    font-size: 8vw;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -162,17 +162,17 @@
     width: 100%;
     max-width: 400px;
     display: flex;
-    justify-content: center; /* centraliza o card */
+    justify-content: center;
   }
 
   .card-projetos {
-    width: 90%; /* menor que o container */
+    width: 90%;
     max-width: 320px;
   }
 
   .img_icons {
-    width: 6vw; /* responsivo */
-    max-width: 25px; /* não fica gigante */
+    width: 6vw;
+    max-width: 25px;
     height: auto;
     margin: 5px;
   }

@@ -1,4 +1,3 @@
-/* ===== NAVBAR BASE ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -18,7 +17,6 @@
   font-weight: bold;
 }
 
-/* MENU DESKTOP */
 .menu {
   display: flex;
   gap: 30px;
@@ -38,12 +36,10 @@
   transform: scale(1.1);
 }
 
-/* ÍCONE */
 .hamburger {
   display: none;
 }
 
-/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .navbar {
     justify-content: center;
@@ -77,7 +73,6 @@
     pointer-events: all;
     height: auto;
 
-    /* Blur aumentado para 30px para esconder o conteúdo de trás */
     background: rgba(14, 21, 37, 0.85);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
@@ -88,9 +83,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 0; /* Removido o espaço entre os itens */
-    margin: 0; /* Remove espaço no topo da lista */
-    padding: 0; /* Remove recuo da lista */
+    gap: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .menu li {
@@ -101,7 +96,7 @@
 
   .menu a {
     display: block;
-    padding: 20px 0; /* Aumentei um pouco o padding para facilitar o clique */
+    padding: 20px 0;
     font-size: 18px;
     width: 100%;
     text-decoration: none;
@@ -110,6 +105,6 @@
 
   .menu a:hover {
     background: rgba(255, 255, 255, 0.05);
-    transform: none; /* Evita tremores visuais no mobile */
+    transform: none;
   }
 }

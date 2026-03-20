@@ -4,7 +4,6 @@ import "../style/Navbar.css";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Função para fechar o menu ao clicar em um link
   const closeMenu = () => setMenuOpen(false);
 
   return (
