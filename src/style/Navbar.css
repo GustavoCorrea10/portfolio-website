@@ -41,8 +41,6 @@
 /* ÍCONE */
 .hamburger {
   display: none;
-  font-size: 28px;
-  color: white;
 }
 
 /* ===== MOBILE ===== */
@@ -51,12 +49,10 @@
     justify-content: center;
   }
 
-  /* esconde logo */
   .logo {
     display: none;
   }
 
-  /* ícone */
   .hamburger {
     display: block;
     cursor: pointer;
@@ -65,53 +61,55 @@
     color: white;
   }
 
-  /* container do menu */
   .nav {
     position: absolute;
-    top: 70px; /* altura da navbar */
+    top: 70px;
     left: 0;
     width: 100%;
-
     opacity: 0;
     pointer-events: none;
     transition: 0.3s ease;
+    overflow: hidden;
   }
 
-  /* quando abrir */
   .nav.active {
     opacity: 1;
     pointer-events: all;
+    height: auto;
 
-    /* fundo com blur */
-    background: rgba(14, 21, 37, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    /* Blur aumentado para 30px para esconder o conteúdo de trás */
+    background: rgba(14, 21, 37, 0.85);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   }
 
-  /* lista */
   .menu {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 0; /* Removido o espaço entre os itens */
+    margin: 0; /* Remove espaço no topo da lista */
+    padding: 0; /* Remove recuo da lista */
   }
 
-  /* cada item */
   .menu li {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  /* links */
   .menu a {
     display: block;
-    padding: 18px 0;
+    padding: 20px 0; /* Aumentei um pouco o padding para facilitar o clique */
     font-size: 18px;
     width: 100%;
+    text-decoration: none;
+    color: white;
   }
 
-  /* efeito ao tocar */
   .menu a:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+    transform: none; /* Evita tremores visuais no mobile */
   }
 }

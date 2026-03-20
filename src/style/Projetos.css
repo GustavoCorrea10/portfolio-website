@@ -149,6 +149,7 @@
     align-items: center;
     width: 100%;
     padding: 20px;
+    scroll-margin-top: 100px;
   }
 
   .h2-projetos {
@@ -174,5 +175,26 @@
     max-width: 25px; /* não fica gigante */
     height: auto;
     margin: 5px;
+  }
+
+  .h2-projetos {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    background: linear-gradient(
+      120deg,
+      #1e3a8a,
+      #3b82f6,
+      #60a5fa,
+      #3b82f6,
+      #1e3a8a
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease-in-out infinite;
+    color: white;
   }
 }

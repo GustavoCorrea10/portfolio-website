@@ -4,6 +4,9 @@ import "../style/Navbar.css";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Função para fechar o menu ao clicar em um link
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="navbar">
       <h2 className="logo">Dev Gustavo</h2>
@@ -15,19 +18,29 @@ function Navbar() {
       <nav className={menuOpen ? "nav active" : "nav"}>
         <ul className="menu">
           <li>
-            <a href="#inicio">Inicio</a>
+            <a href="#inicio" onClick={closeMenu}>
+              Inicio
+            </a>
           </li>
           <li>
-            <a href="#sobre">Apresentação</a>
+            <a href="#sobre" onClick={closeMenu}>
+              Apresentação
+            </a>
           </li>
           <li>
-            <a href="#tecnologias">Tecnologias</a>
+            <a href="#tecnologias" onClick={closeMenu}>
+              Tecnologias
+            </a>
           </li>
           <li>
-            <a href="#projetos">Projetos</a>
+            <a href="#projetos" onClick={closeMenu}>
+              Projetos
+            </a>
           </li>
           <li>
-            <a href="#contato">Contato</a>
+            <a href="#contato" onClick={closeMenu}>
+              Contato
+            </a>
           </li>
         </ul>
       </nav>
