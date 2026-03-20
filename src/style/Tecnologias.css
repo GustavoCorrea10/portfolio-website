@@ -1,61 +1,109 @@
-.section_tecnologias{
-    background-color: #1c316b;
-    padding-bottom:37px;
-    scroll-margin-top: 100px;
-
+.section_tecnologias {
+  background-color: #1c316b;
+  padding-bottom: 37px;
+  scroll-margin-top: 100px;
 }
 
-.h1_tecnologias{
-    color: white;
-    text-align: center;
-    font-size: 70px;
-    margin: 0px;
-    background: linear-gradient(120deg, #1e3a8a, #3b82f6, #60a5fa, #3b82f6, #1e3a8a);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientMove 6s ease-in-out infinite;
+.h1_tecnologias {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  margin: 0px;
+  background: linear-gradient(
+    120deg,
+    #1e3a8a,
+    #3b82f6,
+    #60a5fa,
+    #3b82f6,
+    #1e3a8a
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease-in-out infinite;
 }
 
-
-.div_tecnologias{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-background-color: rgb(24, 24, 27);
-height: 300px;
-border-radius: 20px;
-margin: 30px auto;
-padding-top: 10px;
-width: 900px;
+.div_tecnologias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(24, 24, 27);
+  height: 300px;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding-top: 10px;
+  width: 100%;
+  max-width: 900px;
+  min-height: 300px;
 }
 
-.div_tecnologias h2{
-    color: white;
+.div_tecnologias h2 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0px 0px;
+  margin: 2px;
+  font-size: 20px;
+}
+
+.div_card_tecnologia {
+  background-color: rgb(85, 94, 121);
+  height: 80px;
+  width: 260px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.div_img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.img_tecnologia {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .h1_tecnologias {
+    font-size: 32px;
+    padding: 20px 10px;
+  }
+
+  .div_tecnologias {
     width: 100%;
-    text-align: center;
-    padding: 0px 0px;
-    margin: 2px ;
-    font-size: 20px;
-}
+    padding: 15px;
+    border-radius: 15px;
+  }
 
-.div_card_tecnologia{
+  .div_card_tecnologia {
     background-color: rgb(85, 94, 121);
-    height: 80px;
+    height: 100px;
     width: 260px;
     border-radius: 10px;
     margin: 10px;
-}
+  }
 
-.div_img{
+  .div_tecnologias {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-}
+    background-color: rgb(24, 24, 27);
+    height: 700px;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+  }
 
-.img_tecnologia{
-    margin-top: 5px;
-    width: 40px;
-    height: 40px;
+  .img_tecnologia {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+  }
 }
