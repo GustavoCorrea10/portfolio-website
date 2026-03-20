@@ -32,17 +32,17 @@
   font-size: 23px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 750px) {
   .div-sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 390px;
+    width: 100%;
     padding: 20px;
   }
 
   .h1-sobre {
-    font-size: 32px;
+    font-size: 50px;
     margin: 0 0 20px 0; /* remove laterais */
     text-align: center;
   }
