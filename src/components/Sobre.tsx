@@ -1,12 +1,56 @@
-import "../style/Sobre.css"
+import "../style/Sobre.css";
 
 function Sobre() {
-    return (
-        <div id="sobre" className="div-sobre">
-            <h1 className="h1-sobre">Sobre mim</h1>
-            <p className="p-sobre">Cursando Análise e Desenvolvimento de Sistemas e formado em Desenvolvimento Full Stack Java pelo bootcamp da Generation Brasil, com experiência prática no desenvolvimento de aplicações web e trabalho em equipe por meio de projetos realizados durante a formação. Durante o bootcamp, desenvolvi sistemas back-end em Java, incluindo uma loja de jogos, um sistema de RH com funcionalidades CRUD integradas ao banco de dados e um sistema bancário utilizando Programação Orientada a Objetos (POO) para gerenciamento de contas e transações. Também participei do desenvolvimento do projeto integrador Prato Certo, uma vitrine digital para restaurantes com foco em opções veganas e vegetarianas. Na graduação, desenvolvi um projeto front-end estático para uma esteticista, utilizando HTML e CSS, além de outros projetos front-end utilizando React, aplicando conceitos de componentização para construção de interfaces web organizadas e reutilizáveis. Possuo perfil proativo, comunicativo e com facilidade de adaptação, com interesse constante em aprendizado e evolução no desenvolvimento de software.</p>
+  return (
+    <section id="sobre" className="sobre-section">
+      <h2 className="sobre-title">Sobre Mim</h2>
+
+      <div className="sobre-grid">
+        <div className="sobre-card-info">
+          <h3>Educação Estruturada</h3>
+
+          <div className="timeline-item">
+            <h4>Análise e Desenvolvimento de Sistemas</h4>
+            <p className="institution">
+              UNICID - Universidade Cidade de São Paulo
+            </p>
+            <span className="badge-date">Conclusão: 06/2027 (3º Semestre)</span>
+          </div>
+
+          <div className="timeline-item">
+            <h4>Bootcamp Full Stack Java</h4>
+            <p className="institution">Generation Brasil</p>
+            <span className="badge-date">Concluído em: 03/2025</span>
+          </div>
         </div>
-    )
+
+        <div className="sobre-card-text">
+          <h3>Minha Trajetória</h3>
+          <p>
+            Sou um desenvolvedor focado em criar softwares eficientes, limpos e
+            de alto impacto comercial. Minha base sólida em{" "}
+            <strong>Programação Orientada a Objetos (POO)</strong> e o padrão de
+            arquitetura <strong>MVC</strong> foram consolidados no bootcamp
+            intensivo da Generation Brasil, onde dediquei centenas de horas
+            construindo APIs robustas utilizando{" "}
+            <strong>Java e Spring Boot</strong>.
+          </p>
+          <p>
+            No desenvolvimento visual, utilizo{" "}
+            <strong>React e TypeScript</strong> combinados com conceitos de
+            componentização limpa e design responsivo para construir interfaces
+            web ricas, organizadas e totalmente reutilizáveis.
+          </p>
+          <p>
+            Possuo experiência prática em entregas orientadas a metodologias
+            ágeis (Scrum) e trabalho em equipe. Meu perfil proativo e
+            comunicativo me permite rápida adaptação a novas pilhas tecnológicas
+            e regras de negócio.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Sobre
+export default Sobre;

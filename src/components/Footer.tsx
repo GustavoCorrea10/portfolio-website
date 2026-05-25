@@ -1,14 +1,13 @@
-import "../style/Footer.css"
+import "../style/Footer.css";
 
 function Rodape() {
   return (
-    <footer id="contato">
+    <footer id="contato" className="footer-container">
       <div className="div_sobre">
-        <p className="p_Copyright">Gustavo Corrêa | Copyright: 2026</p>
-        <p className="p_footer">Acesse as minhas redes sociais</p>
+        <p className="p_footer">Vamos construir algo incrível juntos?</p>
+        <p className="p_footer_sub">Acesse minhas redes sociais</p>
 
         <div className="redes_sociais">
-
           <a
             className="link-rede"
             href="https://github.com/GustavoCorrea10"
@@ -18,6 +17,7 @@ function Rodape() {
             <img
               className="icone-rede"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
             />
           </a>
 
@@ -30,6 +30,7 @@ function Rodape() {
             <img
               className="icone-rede"
               src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
+              alt="LinkedIn"
             />
           </a>
 
@@ -42,13 +43,16 @@ function Rodape() {
             <img
               className="icone-rede"
               src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+              alt="Instagram"
             />
           </a>
-
         </div>
+        <p className="p_Copyright">
+          © 2026 Gustavo Corrêa. Todos os direitos reservados.
+        </p>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Rodape
+export default Rodape;

@@ -23,7 +23,7 @@ function Navbar() {
           </li>
           <li>
             <a href="#sobre" onClick={closeMenu}>
-              Apresentação
+              Sobre
             </a>
           </li>
           <li>

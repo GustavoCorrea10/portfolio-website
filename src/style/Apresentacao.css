@@ -1,131 +1,174 @@
-.div-pai {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap");
+
+.hero-container {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  background-color: #1c316b;
-  scroll-margin-top: 100px;
-}
-
-.foto-perfil {
-  width: 470px;
-  height: 530px;
-  margin: 5px 100px;
-  transition:
-    transform 0.4s ease,
-    box-shadow 0.4s ease;
-  z-index: 1;
-}
-
-.foto-perfil:hover {
-  transform: scale(1.05);
-}
-
-.section-apresentacao {
+  justify-content: center;
+  align-items: center;
+  background-color: #030712; /* Fundo escuro profundo moderno */
+  min-height: 100vh;
+  padding: 0 20px;
+  overflow: hidden;
   text-align: center;
-  margin-top: 100px;
+  font-family: "Inter", sans-serif;
 }
 
-.h1-apresentacao {
-  font-size: 70px;
-  margin: 5px 70px;
-  background: linear-gradient(
-    120deg,
-    #1e3a8a,
-    #3b82f6,
-    #60a5fa,
-    #3b82f6,
-    #1e3a8a
-  );
-
-  background-size: 300% 300%;
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: gradientMove 6s ease-in-out infinite;
+/* Esferas de iluminação ambiente */
+.blur-radial {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
 }
 
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
+.orb-blue {
+  width: 500px;
+  height: 500px;
+  background: #3b82f6;
+  top: -10%;
+  left: 15%;
+}
+
+.orb-purple {
+  width: 450px;
+  height: 450px;
+  background: #a855f7;
+  bottom: 10%;
+  right: 15%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  50% {
-    background-position: 100% 50%;
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Badge de Status Profissional */
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 8px 16px;
+  border-radius: 99px;
+  color: #60a5fa;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
   }
   100% {
-    background-position: 0% 50%;
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
   }
 }
 
-.p_apresentacao {
+.hero-title {
+  font-size: 68px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  display: block;
+  font-size: 42px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 10px;
+}
+
+.hero-description {
   font-size: 20px;
-  line-height: 1.5;
-  width: 600px;
-  margin-left: 30px;
-  color: white;
+  color: #9ca3af;
+  line-height: 1.6;
+  max-width: 680px;
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 
-.botao-saiba-mais {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
+.hero-description strong {
+  color: #f3f4f6;
+  font-weight: 500;
+}
+
+/* Container do botão centralizado */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-primary {
+  padding: 14px 40px;
   font-size: 18px;
-  color: white;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2563eb;
+  border-radius: 8px;
   text-decoration: none;
-  background: linear-gradient(135deg, #0a094b, #2a1d74);
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0px 0px 33px 14px rgba(60, 42, 163, 0.5);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.botao-saiba-mais:hover {
-  transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 10px 25px rgba(60, 42, 163, 0.4);
-  background: linear-gradient(135deg, #110f5f, #2a1d74);
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
 }
 
-.botao-saiba-mais:active {
-  transform: translateY(0px) scale(0.95);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 750px) {
-  .div-pai {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 44px;
   }
-
-  .foto-perfil {
-    width: 250px;
-    height: auto;
-    margin: 0 auto 20px auto;
+  .hero-subtitle {
+    font-size: 28px;
   }
-
-  .section-apresentacao {
-    text-align: center;
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .h1-apresentacao {
-    font-size: 50px;
-    margin: 0 0 15px 0;
-    text-align: center;
-  }
-
-  .p_apresentacao {
+  .hero-description {
     font-size: 16px;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    text-align: center;
   }
-
-  .botao-saiba-mais {
-    margin-top: 20px;
+  .btn-primary {
+    width: 100%;
+    text-align: center;
   }
 }

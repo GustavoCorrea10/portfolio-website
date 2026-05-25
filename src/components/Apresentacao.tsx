@@ -1,26 +1,38 @@
-import "../style/Apresentacao.css"
-import fotoPerfil from "../assets/img/perfil/fotoPerfil.png"
+import "../style/Apresentacao.css";
 
 function Apresentacao() {
   return (
+    <div id="inicio" className="hero-container">
+      {/* Luzes difusas de fundo (efeito de profundidade tech) */}
+      <div className="blur-radial orb-blue"></div>
+      <div className="blur-radial orb-purple"></div>
 
-    <div id="inicio" className="div-pai">
-      <section className="section-apresentacao">
-        <h1 className="h1-apresentacao">Full Stack<br /> Developer</h1>
-        <p className="p_apresentacao">
-          Desenvolvedor focado em criar aplicações web modernas usando Java, React e TypeScript.
+      <section className="hero-content">
+        <div className="status-badge">
+          <span className="status-dot"></span>
+          Disponível para Estágio (São Paulo / Remoto)
+        </div>
 
+        <h1 className="hero-title">
+          Gustavo Corrêa
+          <span className="hero-subtitle">Full Stack Developer</span>
+        </h1>
+
+        <p className="hero-description">
+          Estudante de Análise e Desenvolvimento de Sistemas especializado no
+          ecossistema <strong>Java, Spring Boot, React e TypeScript</strong>.
+          Desenvolvendo aplicações robustas, APIs RESTful e soluções
+          inteligentes.
         </p>
-        <a href="#sobre" className="botao-saiba-mais">
-          Saiba mais
-        </a>
-      </section>
 
-      <div>
-        <img className="foto-perfil" src={fotoPerfil} alt="Foto de perfil" />
-      </div>
+        <div className="hero-buttons">
+          <a href="#projetos" className="btn-primary">
+            Ver Projetos
+          </a>
+        </div>
+      </section>
     </div>
-  )
+  );
 }
 
-export default Apresentacao
+export default Apresentacao;

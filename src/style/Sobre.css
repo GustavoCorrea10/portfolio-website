@@ -1,58 +1,104 @@
-.div-sobre {
+.sobre-section {
+  background-color: #030712;
+  padding: 100px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-margin-top: 100px;
+  font-family: "Inter", sans-serif;
+  scroll-margin-top: 80px;
 }
 
-.h1-sobre {
-  font-size: 70px;
-  margin-top: 20px;
-  margin-left: 70px;
-  margin-right: 70px;
-  background: linear-gradient(
-    120deg,
-    #1e3a8a,
-    #3b82f6,
-    #60a5fa,
-    #3b82f6,
-    #1e3a8a
-  );
-  background-size: 300% 300%;
+.sobre-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  background: linear-gradient(135deg, #ffffff, #93c5fd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientMove 6s ease-in-out infinite;
 }
 
-.p-sobre {
-  text-align: justify;
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 32px;
+  max-width: 1140px;
   width: 100%;
-  max-width: 900px;
-  color: white;
-  font-size: 23px;
 }
 
-@media (max-width: 750px) {
-  .div-sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-  }
+.sobre-card-info,
+.sobre-card-text {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
 
-  .h1-sobre {
-    font-size: 50px;
-    margin: 0 0 20px 0;
-    text-align: center;
-  }
+.sobre-grid h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  border-left: 4px solid #2563eb;
+  padding-left: 12px;
+}
 
-  .p-sobre {
-    width: 100%;
-    max-width: 320px;
-    font-size: 16px;
-    margin: 0 auto;
-    text-align: left;
-    line-height: 1.6;
+.timeline-item {
+  margin-bottom: 28px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item h4 {
+  color: #f3f4f6;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.institution {
+  color: #9ca3af;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.badge-date {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.08);
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.sobre-card-text p {
+  color: #9ca3af;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.sobre-card-text p:last-child {
+  margin-bottom: 0;
+}
+
+.sobre-card-text strong {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (max-width: 868px) {
+  .sobre-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .sobre-card-info,
+  .sobre-card-text {
+    padding: 24px;
   }
 }

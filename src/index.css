@@ -9,10 +9,17 @@ html {
   scroll-behavior: smooth;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap");
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  overflow-x: hidden;
+  /* Fundo escuro moderno e unificado para o site todo */
+  background-color: #0f172a;
+  color: #f8fafc;
 }
