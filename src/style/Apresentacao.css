@@ -157,16 +157,27 @@
   box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
 }
 
-@media (max-width: 640px) {
+/* Ajustes para telas menores (Celulares e Tablets) */
+@media (max-width: 768px) {
+  .hero-container {
+    align-items: flex-start; /* Empurra o conteúdo para cima */
+    padding-top: 110px; /* Ajusta a distância do topo (abaixo do menu) */
+    padding-bottom: 60px;
+  }
+
   .hero-title {
     font-size: 44px;
   }
+
   .hero-subtitle {
     font-size: 28px;
   }
+
   .hero-description {
     font-size: 16px;
+    margin-bottom: 30px; /* Dá uma reduzida no espaço vazio antes do botão */
   }
+
   .btn-primary {
     width: 100%;
     text-align: center;
