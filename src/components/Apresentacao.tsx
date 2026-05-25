@@ -10,7 +10,7 @@ function Apresentacao() {
       <section className="hero-content">
         <div className="status-badge">
           <span className="status-dot"></span>
-          Disponível para Estágio (São Paulo / Remoto)
+          Disponível para Estágio (São Paulo)
         </div>
 
         <h1 className="hero-title">
